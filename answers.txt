@@ -4,3 +4,13 @@ Questions :
 2. What does fast-forward in Git mean?
 3. Why should you have different branches?
 4. In a project how many remote Git repositories do you usually have?
+
+Answers :
+
+1. gitignore file includes files or patterns that git should ignore i.e.files doesnt need to be tracked  For a Java project, gitignore file contains IDE specific config files like .idea/vcs.xml , compiled code like .class files, .classpath file, package files like .jar .war , files generated at runtime .log or .tmp files
+
+2.If there is new branch which contains several new commits, but master hasnt been updated by anyone else, then a fast-forward merge could be done. It simply means that git moves HEAD pointer for that branch to the latest commit without doing any other work.
+
+3. Branches provide a way to do separate and independent line of development without affecting the main code base. Moreover, branches makes it harder for unstable code to be merged with the previously working version of the code.
+
+4. It varies from project to project. Generally there is one repository with multiple branches.
